@@ -1,0 +1,50 @@
+data:
+  root_dir: "data/raw/KITTI"  # Используем мини-датасет (200 img)
+  processed_dir: "data/processed"
+  train_split: "train"
+  val_split: "val"
+
+yolo:
+  data_dir: "data/processed/YOLO"
+  imgsz: 512  # Оптимальный размер
+  batch: 16
+
+model:
+  name: "faster_rcnn"
+  backbone: "resnet50"
+  pretrained: true
+  num_classes: 7
+
+training:
+  batch_size: 8           # ⚡ Оптимально для 8.6 GB VRAM
+  num_epochs: 10          # ⚡ Достаточно для хорошего результата
+  learning_rate: 0.005
+  momentum: 0.9
+  weight_decay: 0.0005
+  optimizer: "SGD"
+  scheduler: "cosine"
+  num_workers: 4          # ⚡ Используем 4 воркера
+  device: "cuda"          # ✅ GPU!
+  seed: 42
+  freeze_backbone: false  # ✅ Обучаем всё (GPU позволяет)
+
+evaluation:
+  iou_threshold: 0.5
+  confidence_threshold: 0.3
+  metrics:
+    - "mAP@0.5"
+    - "mAP@0.5:0.95"
+    - "precision"
+    - "recall"
+    - "f1"
+
+logging:
+  log_dir: "results/logs"
+  plot_dir: "results/plots"
+  checkpoint_dir: "results/checkpoints"
+  log_interval: 10
+
+reproducibility:
+  deterministic: true
+  benchmark: true  # ⚡ Ускоряет свёртки на GPU
+  seed: 42

@@ -1,0 +1,100 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Виртуальные окружения
+venv/
+ENV/
+env/
+.venv
+*.egg-info
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Данные (слишком большие для GitHub)
+data/
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Результаты обучения (большие файлы)
+results/
+runs/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.bin
+
+# Логи
+*.log
+logs/
+
+# Временные файлы
+*.tmp
+*.temp
+temp/
+tmp/
+*.bak
+*.pyc
+*.pyo
+
+# Конфигурации IDE
+.project
+.settings/
+.classpath
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Ultralytics YOLO runs
+runs/detect/
+runs/segment/
+runs/classify/
+runs/pose/
+runs/obb/
+
+# Weights and biases
+wandb/
+
+# Hugging Face cache
+.huggingface/
+
+# Torch hub cache
+.torch/
+
+# Python history
+.history
