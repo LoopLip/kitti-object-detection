@@ -311,20 +311,16 @@ python visualize_predictions.py
 
 ### Сравнение метрик
 
-![Metric Comparison](results/plots/metrics_comparison.png)
 *Сравнение mAP@0.5, Precision, Recall и F1-score для всех моделей.*
 
 ### Кривые обучения
 
-![Training Curves](results/plots/training_curves.png)
 *Динамика train/val loss для Faster R-CNN, SSD, RetinaNet и DETR.*
 
 ### Примеры предсказаний
 
-![Predictions Sample 0](results/plots/predictions_sample_0.png)
 *Визуализация предсказаний всех моделей на одном изображении: Ground Truth (слева) и детекции каждой модели.*
 
-![Predictions Sample 1](results/plots/predictions_sample_1.png)
 *Пример работы моделей на сцене с пешеходами и автомобилями.*
 
 > 📌 Изображения будут доступны после первого запуска `visualize_predictions.py`.
