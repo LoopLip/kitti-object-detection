@@ -1,8 +1,4 @@
----
-
-> **Учебный проект** — сравнительный анализ state-of-the-art моделей детекции объектов на датасете KITTI для задач автономного вождения.
-
----
+Учебный проект — сравнительный анализ state-of-the-art моделей детекции объектов на датасете KITTI для задач автономного вождения.
 
 ## 📋 Оглавление
 
@@ -387,26 +383,6 @@ python visualize_predictions.py
 - [ ] **Multi-object tracking** — трекинг объектов в видеопотоке (DeepSORT, ByteTrack)
 - [ ] **Quantization** — квантизация моделей для Edge-устройств (Jetson, Raspberry Pi)
 
----
-
-## 🎯 Для чего подходит этот проект
-
-### Образовательные цели
-- Изучение архитектур детекции объектов "изнутри" (от R-CNN до Transformers)
-- Понимание trade-offs между точностью и скоростью
-- Практика с PyTorch, Albumentations, Hugging Face
-
-### Исследовательские задачи
-- Сравнительный анализ на едином pipeline
-- Воспроизводимые эксперименты (фиксация seed'ов)
-- Бенчмаркинг для выбора архитектуры под конкретную задачу
-
-### Практическое применение
-- База для курсовых и дипломных работ по CV
-- Стартовая точка для индустриальных проектов (автономное вождение, робототехника)
-- Изучение пайплайна MLOps (Data → Train → Evaluate → Visualize)
-
----
 
 ## ✅ Чек-лист быстрого старта
 
@@ -421,20 +397,6 @@ python visualize_predictions.py
 - [ ] Повторить для остальных моделей
 - [ ] Проанализировать результаты
 
----
-
-## 📚 Цитирование
-
-Если вы используете этот проект в своей работе, пожалуйста, цитируйте:
-
-```bibtex
-@misc{kitti-detection-comparison,
-  author = {Ваше Имя},
-  title  = {Сравнительный анализ моделей детекции объектов на датасете KITTI},
-  year   = {2026},
-  howpublished = {\url{https://github.com/username/kitti-object-detection}}
-}
-```
 
 ### Оригинальные статьи
 
@@ -482,32 +444,3 @@ python visualize_predictions.py
 Этот проект распространяется под лицензией MIT. Подробности см. в файле `LICENSE`.
 
 ---
-
-## 📬 Контакты
-
-- **Автор:** Ваше Имя
-- **Email:** email@example.com
-- **GitHub:** [github.com/username](https://github.com/username)
-- **Telegram:** @username
-
-По вопросам сотрудничества и предложений — пишите на почту или в Telegram.
-
----
-
-## 🙏 Благодарности
-
-- **Команде KITTI** за предоставление открытого датасета для исследований автономного вождения
-- **PyTorch Team** за мощный и гибкий фреймворк
-- **Ultralytics** за YOLOv8 и отличную документацию
-- **Hugging Face** за открытые веса DETR и удобный API
-- **Albumentations Team** за лучшую библиотеку аугментации
-- **Сообществу Open Source** за бесценный вклад в развитие Computer Vision
-
----
-
-> ⚡ *Сделано с ❤️ в рамках учебной практики. Если проект оказался полезным, поставьте ⭐ на GitHub!*
-
-[![Python](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.6-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/username/kitti-object-detection)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
